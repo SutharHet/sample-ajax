@@ -7,7 +7,7 @@ $(document).ready(() => {
       timeout: 2000,
       success : (data) => {
         $.each(data, (index, item) => {
-          $("#data").append("<li>ID: "+ String(item.id)+" | Title: "+ item.title+" | <button id= \"edt"+String(item.id)+"\">Edit</button>  <button id= \"del"+String(item.id)+"\">Delete</button></li>")
+          $("#data").append("<tr><td>"+ String(item.id)+"</td><td>"+ item.title+"</td> <td><button id= \"edt"+String(item.id)+"\">Edit</button></td> <td><button id= \"del"+String(item.id)+"\">Delete</button></td></tr>")
         })
       },
       error: () => {
