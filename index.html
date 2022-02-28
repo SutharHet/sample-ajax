@@ -5,8 +5,30 @@
   <title>Ajax Document</title>
   <script src="jquery-3.6.0.js"></script>
   <script src="script.js"></script>
+  <style>
+    .datasets {
+      width: 100%;
+      height: 80%;
+      border: none;
+    }
+    td,th {
+      padding: 6px;
+      margin: none;
+      border: none;
+    }
+    tr:nth-child(odd){
+      background-color: beige;
+    }
+  </style>
 </head>
 <body>
-  <ul id="data"></ul>
+  <table id="data">
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </table>
 </body>
 </html>
